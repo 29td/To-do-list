@@ -4,6 +4,7 @@
   "description": "In this project I will build a simple HTML list of To Do tasks. This simple web page will be built using webpack and served by a webpack dev server.",
   "private": "true",
   "type": "module",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "webpack --mode development",
@@ -36,7 +37,6 @@
     "clean-webpack-plugin": "^4.0.0",
     "lodash": "^4.17.21"
   },
-  "main": "webpack.config.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/29td/To-do-list.git"
