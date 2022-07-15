@@ -1,17 +1,23 @@
-// import '/src/style.css';
+import populateList from './populate.js';
+import addNewTask from './add.js';
+import trashCompleted from './iteration.js';
 
-import { list } from '/modules/task.js';
+const addNewTaskInput = document.querySelector('#text');
+const addTaskBtn = document.querySelector('.addbtn');
+const removeCompletedTask = document.querySelector('.delete-btn');
 
-// Selector
-const toDo = document.querySelector('.to-do-list');
+addTaskBtn.addEventListener('click', (e) => {
+  e.preventDefault();
+  addNewTask(addNewTaskInput);
+});
 
-list.forEach((list) => {
-  toDo.innerHTML += `
-   <li>
-       <input type="checkbox">
-       <span>${list.description}</span>
-       <i class="fa-solid fa-ellipsis-vertical"></i>
-  </li>    
-  <hr>              
-  `;
+removeCompletedTask.addEventListener('click', (e) => {
+  e.preventDefault();
+  trashCompleted();
+  populateList();
+});
+
+document.addEventListener('DOMContentLoaded', (e) => {
+  e.preventDefault();
+  populateList();
 });
