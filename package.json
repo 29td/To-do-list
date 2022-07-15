@@ -5,9 +5,9 @@
   "private": "true",
   "type": "module",
   "scripts": {
-    "watch": "webpack --watch",
-    "start": "webpack-dev-server  --config webpack.dev.js --open",
-    "build": "webpack --config webpack.prod.js"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack --mode development",
+    "start": "webpack serve --open"
   },
   "keywords": [],
   "author": "",
