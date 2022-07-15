@@ -1,11 +1,6 @@
 import populateList from './populate.js';
 import addNewTask from './add.js';
-
-// var link = document.createElement('link');
-// link.rel = 'stylesheet';
-// link.type = 'text/css';
-// link.href = './style.css';
-// document.getElementsByTagName('head')[0].appendChild(link);
+import trashCompleted from './iteration.js';
 
 const addNewTaskInput = document.querySelector('#text');
 const addTaskBtn = document.querySelector('.addbtn');
@@ -18,6 +13,7 @@ addTaskBtn.addEventListener('click', (e) => {
 
 removeCompletedTask.addEventListener('click', (e) => {
   e.preventDefault();
+  trashCompleted();
   populateList();
 });
 

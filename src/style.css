@@ -93,6 +93,7 @@
   }
 
   .delete-btn span {
+    cursor: pointer;
     display: flex;
     justify-content: center;
     color: rgba(128, 128, 128, 0.555);
