@@ -13,10 +13,21 @@ export const plugins = [
   }),
 ];
 export const output = {
-  filename: 'main.js',
+  filename: 'bundle.js',
   path: resolve(__dirname, 'dist'),
   clean: true,
 };
 export const optimization = {
   runtimeChunk: 'single',
+};
+
+module.exports = {
+  module: {
+    rules: [
+      {
+        test: /\.css$/i,
+        use: ["style-loader", "css-loader"],
+      },
+    ],
+  },
 };

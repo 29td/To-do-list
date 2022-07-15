@@ -1,17 +1,27 @@
-// import '/src/style.css';
+import populateList from './populate.js';
+import addNewTask from './add.js';
 
-import { list } from '/modules/task.js';
+// var link = document.createElement('link');
+// link.rel = 'stylesheet';
+// link.type = 'text/css';
+// link.href = './style.css';
+// document.getElementsByTagName('head')[0].appendChild(link);
 
-// Selector
-const toDo = document.querySelector('.to-do-list');
+const addNewTaskInput = document.querySelector('#text');
+const addTaskBtn = document.querySelector('.addbtn');
+const removeCompletedTask = document.querySelector('.delete-btn');
 
-list.forEach((list) => {
-  toDo.innerHTML += `
-   <li>
-       <input type="checkbox">
-       <span>${list.description}</span>
-       <i class="fa-solid fa-ellipsis-vertical"></i>
-  </li>    
-  <hr>              
-  `;
+addTaskBtn.addEventListener('click', (e) => {
+  e.preventDefault();
+  addNewTask(addNewTaskInput);
+});
+
+removeCompletedTask.addEventListener('click', (e) => {
+  e.preventDefault();
+  populateList();
+});
+
+document.addEventListener('DOMContentLoaded', (e) => {
+  e.preventDefault();
+  populateList();
 });
