@@ -15,7 +15,9 @@ For you to get a local template, please follow the folowing prerequisite steps:
 Access the live source on - [Live Demo](https://github.com/29td/To-do-list/tree/to-do-list)
 Copy the **https** or **SSH** address on the code
 Clone the repository using your favorite code editor.
-Once you've open the repo on your VScode run it using index.html on src folder.
+
+### Live version link
+https://29td.github.io/To-do-list/
 
 ## Author
 
