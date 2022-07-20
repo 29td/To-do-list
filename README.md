@@ -12,12 +12,12 @@ In this project I will build a simple HTML list of To Do tasks. This simple web 
 ### Getting Started
 For you to get a local template, please follow the folowing prerequisite steps:
 
-Access the live source on - [Live Demo](https://github.com/29td/To-do-list/tree/to-do-list)
+Access the live source on - [Source code](https://github.com/29td/To-do-list/tree/to-do-list)
 Copy the **https** or **SSH** address on the code
 Clone the repository using your favorite code editor.
 
 ### Live version link
-http://127.0.0.1:5500/src/index.html
+ [Live Demo](http://127.0.0.1:5500/src/index.html)
 
 ## Author
 
