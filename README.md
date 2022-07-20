@@ -17,7 +17,7 @@ Copy the **https** or **SSH** address on the code
 Clone the repository using your favorite code editor.
 
 ### Live version link
- [Live Demo](http://127.0.0.1:5500/src/index.html)
+ [Live Demo](https://29td.github.io/To-do-list/)
 
 ## Author
 
